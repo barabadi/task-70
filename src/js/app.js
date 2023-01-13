@@ -8,3 +8,14 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 });
+const main = document.querySelector(".main");
+const imgSrc = "path/to/image.jpg";
+
+main.innerHTML = `<div class="image">
+<img src="${imgSrc}">
+</div>`;
+
+const image = document.querySelector(".image");
+image.addEventListener("click", () => {
+  image.style.transform = "scale(2)";
+});
